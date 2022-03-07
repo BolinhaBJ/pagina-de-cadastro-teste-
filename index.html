@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form de Registro Com Validação JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>cadastre-se para acessar o sistema</h1> 
+        <form id="register-form">
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="digite sem e-mail">
+            </div>
+            <div class="half-box spacing">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="digite o seu nome">
+            </div>
+            <div class="half-box">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="digite o seu Sobrenome">
+            </div>
+            <div class="half-box spacing">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="digite a sua senha">
+            </div>
+            <div class="half-box">
+                <label for="passconfirmation">Confirme Sua Senha</label>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="digite a sua senha" data-min-length="3">
+            </div>
+            <div class="full-box">                
+                <input type="checkbox" name="agreement" id="agreement" placeholder="digite sem e-mail">
+                <label for="agreement" id= "agreement-label">Eu li e aceito os <a href="#"> termos de uso </a></label>
+            </div>
+            <div class="full-box">                
+                <input type="submit" name="btn-submit" id="Re" value="Registrar">
+                
+            </div>
+        </form>
+    </div>
+    <p class="error-validatio template"></p>
+    <script>"js/scripts.js"</script>
+</body>
+</html>
